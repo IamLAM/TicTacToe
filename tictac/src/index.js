@@ -13,7 +13,12 @@ constructor(props){
 
 
     render() {
-        return ( < button className = "square" onClick={function(){alert("click");}} > { this.props.value} < /button>);
+        return ( <button 
+        className = "square" 
+        onClick={()=>this.setState({value:'X'})} 
+     >
+         { this.state.value} 
+     </button>);
     }
 }
 
